@@ -66,9 +66,86 @@ body {
     padding-top: 80px;
     padding-bottom: 30px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 80px;
     background-color: #f8f8f8;
     font-weight: bolder;
     max-height: 30%;
     line-height: 1.3rem;
+}
+
+.form-container {
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+}
+
+.form-container > p {
+    padding: 0px 20px;
+    margin: 10px 0px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8%;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 7px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-input > input {
+    outline: none;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+.form-input > input:focus {
+    outline: none;
+    border-radius: 5px;
+    border: 1.5px solid rgb(2, 164, 218);
+}
+
+.form-input > input[type='password']:invalid
+{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(253, 84, 84);
+}
+
+.submit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    margin: 0px;
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 14px;
+}
+
+.submit-section > p > b {
+    color: #596D48;
+}
+
+.submit-section > button {
+    background-color: #596D48;
+    padding: 10px 30px;
+    border: 0 solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
 }
